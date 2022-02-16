@@ -15,6 +15,10 @@
 
 // DOC. https://docs.aws.amazon.com/pinpoint/latest/developerguide/pinpoint-dg.pdf
 
+// a) crear un usuario AIM
+// b) crear un proyecto PinPoint
+// c) comprar un número de teléfono
+
 
 using System;
 using System.Threading.Tasks;
@@ -26,9 +30,9 @@ namespace PinpointVoiceMessageClient
 {
     class Program
     {
-        private static readonly string awsKeyId = "AKIA3K4I4W3CUMYXKAGD"; // Agregar tu api key de AIM.
-        private static readonly string awsKeySecret = "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"; // Agregar el key secret de AIM
-        private static readonly string region = "us-east-1";
+        private static readonly string awsKeyId = ""; // Agregar tu key ID de AIM.
+        private static readonly string awsKeySecret = ""; // Agregar el key secret de AIM
+        private static readonly string region = "us-east-1"; // la region usual
         private static readonly string originationNumber = "+50249782248"; // Agregar aqui el número de telefono comprado
         private static readonly string destinationNumber = "+50249782248"; // Agregar el numero de telefono para pruebas previamente verificado
         private static readonly string voiceName = "Mia"; // Voces latinas solo es Mia. También hay voces Castellanas pero sonaria raro, no se.
